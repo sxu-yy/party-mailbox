@@ -1,5 +1,5 @@
 <?php
-  $fname = "mailbox.txt";
+  $fname = "/public/persistent_storage/mailbox.txt";
   if (!empty($_POST)) {
     $mail = htmlspecialchars($_POST['tosend']);
     $fh = fopen($fname, 'a') or die("Can't open file");
